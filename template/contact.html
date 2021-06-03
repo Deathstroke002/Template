@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Contact Anyone</h1>
+	<p>Template</p>
+
+	<p>
+		{{ my_text|title }} <br> {{ my_number }} <br>
+		{{ my_list }}
+	</p>
+	<ul>
+		<li>There are many social media platforms</li>
+		<li>Professionally you should send an email</li>
+	</ul>
+
+	<ul>
+	{% for my_sub_item in my_list %}
+    	<li>{{ forloop.counter}} - {{ my_sub_item|capfirst }}</li>
+	{% endfor %}
+	</ul>
+	</p> CLick on the links to visit a) <a href="https://www.instagram.com/deathstroke002.00/"> Instagram </a> b) <a href="https://www.facebook.com/anish.chandrachud/"> Facebook </a> c) <a href="https://twitter.com/search?q=Modelling%20and%20simulation%20of%20COVID-19%20propagation%20in%20a%20large%20population%20with%20specific%20reference%20to%20India.&src=typed_query"> Twitter </a> d) <a href="https://web.whatsapp.com/"> WhatsApp </a> e) <a href="https://www.linkedin.com/in/anish-chandrachud/"> LinkedIn </a> f) <a href="https://mail.google.com/mail/u/0/#inbox"> Email </a>
+{% endblock content %}
